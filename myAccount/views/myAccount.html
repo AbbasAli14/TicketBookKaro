@@ -1,0 +1,439 @@
+<!-- Account Page -->
+<div class="myAccCont">
+  <!-- Include header -->
+  <div ng-include="'../../common/views/header.html'"></div>
+
+  <!-- Options container -->
+
+  <!-- <div class="options-container">
+    // Options list
+    <div class="options">
+      <ul class="list-group">
+        // Profile Info option
+        <li class="list-group-item" ng-click="showOption('profile')">
+          Profile Info
+        </li>
+        // History option
+        <li class="list-group-item" ng-click="showOption('history')">
+          History
+        </li>
+        // Change Password option
+        <li class="list-group-item" ng-click="showOption('changepassword')">
+          Change Password
+        </li>
+        // Delete Account option
+        <li class="list-group-item" ng-click="showOption('delete')">
+          Delete Account
+        </li>
+        // Log Out option
+        <li class="list-group-item" ng-click="showOption('logout')">Log Out</li>
+      </ul>
+    </div>
+
+    // Content for the selected option will be displayed here
+    <div class="information">
+      // Profile Info
+      <div class="pro_inf_cont" ng-show="selectedOption === 'profile'">
+        // Profile information
+        <div class="profile-info">
+          <h2 class="info_head">Profile Info:</h2>
+          <p style="font-size: xx-large"><b>Name: </b>{{ user.username }}</p>
+          <p style="font-size: xx-large">
+            <b>Date of Birth: </b>{{ user.dob }}
+          </p>
+          <p style="font-size: xx-large">
+            <b>Contact Number: </b>{{ user.contact_no }}
+          </p>
+          <p style="font-size: xx-large">
+            <b>Email Address: </b>{{ user.email }}
+          </p>
+        </div>
+        // Profile image
+        <div class="profile-image">
+          <img src="../../images/Icons/prf_img.jpg" alt="Profile Image" />
+        </div>
+      </div>
+
+      // Booking History
+      <div ng-show="selectedOption === 'history'">
+        <div class="hist_info">
+          // Display booking history
+          <h3
+            style="
+              background-color: black;
+              color: #ff914d;
+              padding-right: 10%;
+              padding-left: 10%;
+              padding-top: 2%;
+              padding-bottom: 2%;
+              text-align: center;
+            "
+          >
+            Booking History:
+          </h3>
+          <ul>
+            <li ng-repeat="booking in currentUserBookingHistory()">
+              <p><b>Movie Name:</b> {{ booking.movieName }}</p>
+              <p><b>Movie Date and Time :</b> {{ booking.dateTime }}</p>
+              <p><b>Theater Name :</b> {{ booking.theatre }}</p>
+              <p><b>Ticket Count:</b> {{ booking.noOfTickets }}</p>
+              <p><b>Total Amount:</b> {{ booking.price | amountFilter}}</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      // Change Password
+      <div ng-show="selectedOption === 'changepassword'">
+        <h2 class="info_head">Change Password</h2>
+        // Form for changing password
+        <form ng-submit="changePassword()">
+          <div class="form-group">
+            <label style="font-size: xx-large" for="oldPassword"
+              ><b>Old Password:</b></label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="oldPassword"
+              ng-model="passwordOld"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label style="font-size: xx-large" for="newPassword"
+              ><b>New Password:</b></label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="newPassword"
+              ng-model="passwordNew"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label style="font-size: xx-large" for="confirmNewPassword"
+              ><b>Confirm New Password:</b></label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="confirmNewPassword"
+              ng-model="passwordConfirm"
+              required
+            />
+          </div>
+          <button
+            style="
+              font-size: large;
+              margin-top: 4%;
+              background-color: #ff914d;
+              border: none;
+              height: 8vh;
+              width: 10vw;
+              border-radius: 25vh;
+            "
+            type="submit"
+            class="btn btn-primary"
+            ng-click="changePassword()"
+          >
+            Change Password
+          </button>
+        </form>
+        // Display password change message
+        <p>{{ passwordChangeMessage }}</p>
+      </div>
+
+      // Delete Account
+      <div ng-show="selectedOption === 'delete'">
+        <h2 class="info_head">Delete Account</h2>
+        <div class="form-group">
+          <label
+            style="font-size: xx-large; margin-bottom: 2%"
+            for="deleteReason"
+          >
+            Reason for Deleting Account (optional):
+          </label>
+          <textarea
+            style="margin-bottom: 4%; margin-top: 2%"
+            id="deleteReason"
+            class="form-control"
+            ng-model="deleteReason"
+            rows="3"
+          ></textarea>
+        </div>
+
+        // Display confirmation message with options
+        <p style="font-size: xx-large; margin-bottom: 2%">
+          Are you sure you want to delete your account?
+        </p>
+        <button
+          style="
+            font-size: large;
+            background-color: #ff914d;
+            border: none;
+            height: 8vh;
+            width: 10vw;
+            border-radius: 25vh;
+          "
+          class="btn btn-secondary"
+          ng-click="showOption('')"
+        >
+          Cancel
+        </button>
+        <button
+          style="
+            font-size: large;
+            background-color: #ff914d;
+            border: none;
+            height: 8vh;
+            width: 10vw;
+            border-radius: 25vh;
+          "
+          class="btn btn-danger"
+          ng-click="confirmDelete()"
+        >
+          Confirm Delete
+        </button>
+      </div>
+
+      // Log Out
+      <div ng-show="selectedOption === 'logout'">
+        <h2 class="info_head">Log Out</h2>
+        <p style="font-size: xx-large; margin-bottom: 5%">
+          Are you sure you want to log out?
+        </p>
+        <button
+          style="
+            font-size: large;
+            background-color: #ff914d;
+            border: none;
+            height: 8vh;
+            width: 10vw;
+            border-radius: 25vh;
+          "
+          class="btn btn-secondary"
+          ng-click="showOption('')"
+        >
+          Cancel
+        </button>
+        <button
+          style="
+            font-size: large;
+            background-color: #ff914d;
+            border: none;
+            height: 8vh;
+            width: 10vw;
+            border-radius: 25vh;
+          "
+          class="btn btn-danger"
+          ng-click="confirmLogout()"
+        >
+          Confirm Log Out
+        </button>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="profContainer">
+    <span class="blackStrip">
+      <ul>
+        <li id="profile2" ng-click="showOption('profile2')">
+          <div class="whiteStrip"></div>
+          <img src="../../images/Icons/user.png" alt="userIcon" class="icon" />
+          Profile Info
+        </li>
+        <li id="history2" ng-click="showOption('history2')">
+          <div class="whiteStrip"></div>
+          <img
+            src="../../images/Icons/history.png"
+            alt="historyIcon"
+            class="icon"
+          />
+          History
+        </li>
+        <li id="change-password2" ng-click="showOption('change-password2')">
+          <div class="whiteStrip"></div>
+          <img
+            src="../../images/Icons/padlock.png"
+            alt="padlockIcon"
+            class="icon"
+          />
+          Change Password
+        </li>
+        <li id="delete-account2" ng-click="showOption('delete-account2')">
+          <div class="whiteStrip"></div>
+          <img
+            src="../../images/Icons/delete.png"
+            alt="deleteIcon"
+            class="icon"
+          />
+          Delete Account
+        </li>
+        <li id="log-out2" ng-click="showOption('log-out2')">
+          <div class="whiteStrip"></div>
+          <img
+            src="../../images/Icons/logout.png"
+            alt="logOutIcon"
+            class="icon"
+          />
+          Log Out
+        </li>
+      </ul> </span
+    ><span class="infoPart profile" ng-show="selectedOption === 'profile2'">
+      <div class="persInfo">
+        <div>
+          <img src="../../images/Icons/username.png" alt="" />{{user.name}}
+        </div>
+        <div>
+          <img src="../../images/Icons/birthday.png" />{{getDOB(user.dob)}}
+        </div>
+        <div>
+          <img src="../../images/Icons/contact.png" alt="" /> 8324454321
+        </div>
+        <div>
+          <img src="../../images/Icons/email.png" alt="" /> {{user.email}}
+        </div>
+      </div>
+      <div class="imgContainer">
+        <img ng-src="{{user.image}}" alt="" />
+        <!-- <div class="changeImageText">
+          <label for="input-file">Upload your image here</label>
+          <input
+            type="file"
+            accept="image/jpeg, image/png, image/jpg"
+            ng-model="filePath"
+            id="input-file"
+          />
+        </div> -->
+      </div> </span
+    ><span class="infoPart history" ng-show="selectedOption === 'history2'">
+      <div class="history-container">
+        <!-- <p><b>Movie Name:</b> {{ booking.movieName }}</p>
+              <p><b>Movie Date and Time :</b> {{ booking.dateTime }}</p>
+              <p><b>Theater Name :</b> {{ booking.theatre }}</p>
+              <p><b>Ticket Count:</b> {{ booking.noOfTickets }}</p>
+              <p><b>Total Amount:</b> {{ booking.price | amountFilter}}</p> -->
+        <div
+          class="bookingContainer"
+          ng-repeat="booking in currentUserBookingHistory()"
+        >
+          <ul>
+            <li style="font-size: 25px; color: #ff914d">
+              {{ booking.movieName }}
+            </li>
+            <li>Movie Date and Time : {{ booking.dateTime }}</li>
+            <li>Theater Name : {{ booking.theatre }}</li>
+            <li>Ticket Count: {{ booking.noOfTickets }}</li>
+            <li>Total Amount: {{ booking.price | amountFilter}}</li>
+          </ul>
+          <img ng-src="{{booking.movieImage}}" alt="" />
+        </div>
+      </div> </span
+    ><span
+      class="infoPart change-password"
+      ng-show="selectedOption === 'change-password2'"
+      ><div class="ChangePassConta">
+        <div class="oldPass">
+          <label for="oldpassw">Enter old password:</label>
+          <input
+            type="password"
+            name="oldpassw"
+            id="oldpassw"
+            ng-model="passwordOld"
+            required
+          />
+        </div>
+        <div class="newPass">
+          <label for="newPassw">Enter new password:</label>
+          <input
+            type="password"
+            name="newPassw"
+            id="newPassw"
+            ng-model="passwordNew"
+            required
+          />
+        </div>
+        <div class="confirmPass">
+          <label for="confPassw">Confirm password:</label>
+          <input
+            type="password"
+            name="confPassw"
+            id="confPassw"
+            ng-model="passwordConfirm"
+            required
+          />
+        </div>
+        <p>{{ passwordChangeMessage }}</p>
+        <p ng-show="passwordChangeMessage1" style="color: #5cb85c">
+          Password changed successfully
+        </p>
+      </div>
+      <div class="confirmationDiv">
+        <h2>Are you sure you want to change your password?</h2>
+        <button ng-click="changePassword()">Confirm</button>
+      </div>
+    </span>
+  </div>
+</div>
+<!-- <div ng-show="selectedOption === 'changepassword'">
+  <h2 class="info_head">Change Password</h2>
+  // Form for changing password
+  <form ng-submit="changePassword()">
+    <div class="form-group">
+      <label style="font-size: xx-large" for="oldPassword"
+        ><b>Old Password:</b></label
+      >
+      <input
+        type="password"
+        class="form-control"
+        id="oldPassword"
+        ng-model="passwordOld"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label style="font-size: xx-large" for="newPassword"
+        ><b>New Password:</b></label
+      >
+      <input
+        type="password"
+        class="form-control"
+        id="newPassword"
+        ng-model="passwordNew"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label style="font-size: xx-large" for="confirmNewPassword"
+        ><b>Confirm New Password:</b></label
+      >
+      <input
+        type="password"
+        class="form-control"
+        id="confirmNewPassword"
+        ng-model="passwordConfirm"
+        required
+      />
+    </div>
+    <button
+      style="
+        font-size: large;
+        margin-top: 4%;
+        background-color: #ff914d;
+        border: none;
+        height: 8vh;
+        width: 10vw;
+        border-radius: 25vh;
+      "
+      type="submit"
+      class="btn btn-primary"
+      ng-click="changePassword()"
+    >
+      Change Password
+    </button>
+  </form>
+  // Display password change message
+  <p>{{ passwordChangeMessage }}</p>
+</div> -->

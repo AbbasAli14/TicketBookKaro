@@ -1,0 +1,85 @@
+<!-- Movies Page -->
+<div>
+  <!-- Include header -->
+  <div ng-include="'../../common/views/header.html'"></div>
+
+  <!-- Sort and filter options -->
+  <div class="sort-box">
+    <!-- Sorting dropdown -->
+    <select
+      id="sortSelect"
+      ng-model="selectedSortOption"
+      ng-change="toggleSortOrder()"
+    >
+      <option value="" disabled selected hidden class="sort-by-option">
+        Sort by:
+      </option>
+      <!-- Sort by Name option -->
+      <option value="movieName" class="sort-options" ng-click="sortBy('Name')">
+        Name
+      </option>
+      <!-- Sort by Rating option -->
+      <option value="rating" class="sort-options" ng-click="sortBy('Rating')">
+        Rating
+      </option>
+    </select>
+  </div>
+
+  <!-- Genre filter buttons -->
+  <div class="genre-filter">
+    <button class="gen_button" ng-click="filterArr('Adventure')">
+      Adventure
+    </button>
+    <button class="gen_button" ng-click="filterArr('Action')">Action</button>
+    <button class="gen_button" ng-click="filterArr('Comedy')">Comedy</button>
+    <button class="gen_button" ng-click="filterArr('Horror')">Horror</button>
+    <button class="gen_button" ng-click="filterArr('Sci-Fi')">Sci-Fi</button>
+    <button class="gen_button" ng-click="filterArr('Romance')">Romance</button>
+    <button class="gen_button" ng-click="filterArr('AllMovies')">
+      All Movies
+    </button>
+  </div>
+
+  <!-- Movie content body -->
+  <div class="mov_body">
+    <div class="movie-posters">
+      <!-- Display movie posters -->
+      <div class="movie" ng-repeat="movie in numMovies">
+        <!-- Movie details and buttons -->
+        <a
+          href="#/movieDescription"
+          ng-click="changePage('movieDescription',movie)"
+          style="text-decoration: none"
+        >
+          <img
+            title="movie description"
+            ng-src="{{ movie.movieImage }}"
+            alt="{{ movie.movieName }} Poster"
+          />
+          <p title="movie description" class="mov_nm">{{ movie.movieName }}</p>
+
+          <!-- Button to book the movie -->
+          <a href="" ng-click="bookNow('theatreDecide', movie)">
+            <button class="book-button">Book Now</button>
+          </a>
+        </a>
+      </div>
+      <!-- Include selected movie template -->
+      <div ng-include="selectedMovieTemplate"></div>
+    </div>
+  </div>
+
+  <!-- Pagination buttons -->
+  <div class="pag-button-container">
+    <button
+      class="pag-button"
+      ng-repeat="num in pagButtonsNumber()"
+      ng-click="getNumOfMovies(num)"
+    >
+      {{num}}
+    </button>
+  </div>
+
+  <!-- Include footer -->
+  <div ng-include="'../../common/views/footer.html'"></div>
+</div>

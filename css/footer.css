@@ -1,0 +1,167 @@
+footer {
+    height: 30vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    bottom: 0;
+  }
+  
+  .socials {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 26.25vh;
+    width: 5.0625vh;
+    position: absolute;
+    left: 95.5%;
+    bottom: 4%;
+  }
+  
+  .social-media-icon {
+    /* display: block; */
+    height: 20%;
+    width: 100%;
+    margin-bottom: 1.5vh;
+    border-radius: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .social-media-icon img {
+    height: 80%;
+  }
+  
+  .newsletter {
+    display: inline-block;
+    height: 26.25vh;
+    width: 20%;
+    position: absolute;
+    left: 70%;
+    top: 7%;
+  }
+  
+  .newsletter h3 {
+    color: #ff914d;
+    font-weight: lighter;
+    font-size: 3.7vh;
+  }
+  
+  .newsletter-content {
+    margin-top: 2vh;
+    color: white;
+  }
+  
+  .input-newsletter {
+    margin-top: 2vh;
+    height: 7vh;
+    width: 13vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1vh solid white;
+    background-color: white;
+    border-radius: 5vh;
+  }
+  
+  .input-newsletter a {
+    /* height: 100%; */
+    /* width: 20%; */
+    /* font-size: 7vh; */
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input-newsletter input {
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  
+  .links {
+    display: inline-block;
+    height: 26.25vh;
+    width: 20%;
+    position: absolute;
+    left: 52%;
+    top: 7%;
+  }
+  
+  .links h3 {
+    color: #ff914d;
+    font-weight: lighter;
+    font-size: 3.7vh;
+  }
+  
+  .links ul {
+    margin-top: 2vh;
+    text-align: center;
+    position: absolute;
+    left: -5%;
+  }
+  
+  .links ul li {
+    list-style-type: none;
+  }
+  
+  .links ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .links ul li a:hover {
+    color: #ff914d;
+  }
+  
+  .movie-genre {
+    display: inline-block;
+    height: 26.25vh;
+    width: 20%;
+    position: absolute;
+    left: 35%;
+    top: 7%;
+  }
+  
+  .movie-genre h3 {
+    color: #ff914d;
+    font-weight: lighter;
+    font-size: 3.7vh;
+  }
+  
+  .movie-genre ul {
+    margin-top: 2vh;
+    text-align: center;
+    position: absolute;
+  }
+  
+  .movie-genre ul li {
+    list-style-type: none;
+  }
+  
+  .movie-genre ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .movie-genre ul li a:hover {
+    color: #ff914d;
+  }
+  
+  .footer-logo {
+    background-image: url("../images/Logos/footerlogo.png");
+    height: 90%;
+    width: 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -1.5vw;
+  }
+  
+  .castInfo{
+      justify-content: space-evenly;
+  }

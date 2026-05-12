@@ -1,0 +1,327 @@
+@import url(/css/header.css);
+@import url(/css/footer.css);
+
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url("../images/Fonts/GlacialIndifference-Regular.otf");
+}
+
+@font-face {
+  font-family: "Glacial Indifference-Bold";
+  src: url("../images/Fonts/GlacialIndifference-Bold.otf");
+}
+
+* {
+  font-family: "Glacial Indifference", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/*  */
+.book-button {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 9vh;
+  width: 13vw;
+  border-radius: 4vh;
+  background-color: white;
+  color: #ff914d;
+  font-size: 130%;
+  font-weight: bolder;
+  border: 0.1vh solid black;
+  transition: 300ms;
+  margin-left: 5%;
+  margin-top: 3%;
+  /* position: relative; */
+  /* left: 6%; */
+}
+.movie button:hover {
+  background-color: black;
+  color: #ff914d;
+}
+.list-group {
+  margin-left: 40px;
+  /* margin-right: 100px; */
+  font-size: 25px;
+  margin-bottom: 100px;
+}
+.options-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Create space between options and information */
+  align-items: center; /* Align information to the top */
+}
+.options {
+  margin-left: 5%;
+  width: 35%;
+  /* background-color: #000000; */
+}
+.information {
+  width: 75%; /* Adjust the width as needed */
+  font-size: 135%;
+  margin-left: 7%;
+  margin-top: 0.4%;
+}
+.list-group-item {
+  list-style-type: none;
+
+  margin-bottom: 1.5%;
+  background-color: #000000;
+  color: #ff914d;
+}
+#oldPassword {
+  width: 30%; /* Adjust the width as needed to make it smaller */
+  padding: 5px;
+}
+#newPassword {
+  width: 30%; /* Adjust the width as needed to make it smaller */
+  padding: 5px;
+}
+#confirmNewPassword {
+  width: 30%; /* Adjust the width as needed to make it smaller */
+  padding: 5px;
+}
+#deleteReason {
+  width: 40%;
+}
+#head2_tpc {
+  color: #ff914d;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.head2 {
+  background-color: #000000;
+  margin-bottom: 3%;
+}
+#welcome {
+  color: white;
+}
+.info_head {
+  margin-bottom: 5%;
+}
+
+.list-group-item:hover {
+  font-weight: bold;
+  cursor: pointer;
+  /* cursor: text; */
+}
+.options:hover {
+  cursor: pointer;
+}
+.pro_inf_cont {
+  display: flex;
+  width: auto;
+  height: auto;
+  border: 5px solid black;
+  border-radius: 2%;
+  padding: 2%;
+  margin-right: 10%;
+  vertical-align: middle;
+}
+.profile-image img {
+  width: 25%;
+  height: auto;
+  float: right;
+  margin-right: 10px;
+}
+.movie-posters {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3%;
+}
+.movie {
+  width: 18%;
+  /* margin-bottom: 0.1%; Adjust margin as needed */
+  text-align: center;
+  margin-right: 3%;
+  margin-left: 3%;
+  margin-bottom: 5%;
+}
+.movie:hover {
+  cursor: pointer;
+}
+/* .movie img {
+  max-width: 100%;
+  height: 80%;
+  border-radius: 5%;
+} */
+.movie img {
+  width: 100%;
+  height: 80%;
+  border-radius: 5%;
+  transition: 300ms;
+  box-shadow: 10px 5px 20px grey;
+}
+.movie img:hover {
+  width: 95%;
+  height: 75%;
+}
+.genre-filter {
+  margin: 0.5%;
+  text-align: center;
+}
+/* .gen_button {
+  margin: 0.5%;
+  color: #ff914d;
+  background-color: #000000;
+  border-color: #ff914d;
+  border-radius: 10%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  font-weight: bold;
+} */
+.mov_nm {
+  color: #000000;
+  margin-top: 3%;
+  font-weight: bold;
+  font-size: 120%;
+  text-align: center;
+}
+.mov_body {
+  display: flex;
+  align-items: flex-start;
+}
+
+.column button {
+  display: block;
+  margin: 5px 0;
+}
+.column {
+  flex: 1; /* Each column takes equal space */
+}
+.gen_button {
+  margin: 1%;
+  color: #ff914d;
+  background-color: #000000;
+  border: 0.1vh solid #ff914d;
+  /* border-color: #ff914d; */
+  border-radius: 3vh;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-weight: bold;
+  outline: none;
+}
+/* .book-button {
+  margin: 0.5%;
+  color: #ff914d;
+  background-color: #000000;
+  border-color: #ff914d;
+  border-radius: 10%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  font-weight: bold;
+} */
+.gen_button:hover {
+  border: 0.1vh solid black;
+  background-color: white;
+}
+/* .book-button:hover {
+  background-color: white;
+} */
+.view_des-button {
+  margin: 0.5%;
+  color: #ff914d;
+  background-color: #000000;
+  border-color: #ff914d;
+  border-radius: 10%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  font-weight: bold;
+}
+.hist_info {
+  border: 5px solid black;
+  border-radius: 2%;
+  padding: 2%;
+  height: 400px;
+  width: 90%;
+  overflow: scroll;
+  margin-right: 10%;
+  margin-bottom: 5%;
+}
+.search-box {
+  text-align: right;
+  margin-right: 3%;
+  margin-top: -3.5%;
+  margin-bottom: 1%;
+}
+.search-box_txt {
+  color: #ff914d;
+  background-color: #000000;
+  border: 3px solid #ff914d;
+  border-radius: 20%;
+  text-align: center;
+  width: 12%;
+}
+.search-box_txt::placeholder {
+  color: #ff914d;
+}
+.search-box_img {
+  max-width: 2.3%;
+}
+
+.sort-box {
+  position: absolute;
+  right: 2%;
+  top: 17%;
+  height: 6vh;
+  width: 8vw;
+}
+#sortSelect {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  border: 0.1vh solid black;
+  border-radius: 7%;
+  background-color: white;
+  color: #ff914d;
+  transition: 300ms;
+  cursor: pointer;
+  /*border: 3px solid #ff914d;
+  border-radius: 20%;
+  width: 8%;
+  text-align: center; */
+}
+/* #sortSelect:hover {
+  background-color: #000000;
+}
+.sort-options {
+  background-color: white;
+  height: 100%;
+} */
+.pag-button-container {
+  position: relative;
+  left: 48%;
+  /* transform: translateX(-50%); */
+  margin-bottom: 5%;
+  width: 8vw;
+  height: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pag-button {
+  width: 2vw;
+  height: 100%;
+  background-color: black;
+  border: 0.1vh solid black;
+  border-radius: 30%;
+  transition: 300ms;
+  color: #ff914d;
+}
+.pag-button:hover {
+  background-color: white;
+  border: 0.1vh solid black;
+}
+
+.profile-info {
+  float: left;
+}

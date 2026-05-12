@@ -1,0 +1,56 @@
+<!-- Movie Details Page -->
+<div id="lol">
+  <!-- Include header -->
+  <div ng-include="'../../common/views/header.html'"></div>
+  <!-- <button ng-click="goBack()" class="back-button">
+    <div class="imgInBtton"></div>
+  </button> -->
+  <!-- Movie information section -->
+  <div id="blackBorder" class="row">
+    <div class="column">
+      <!-- Display movie image -->
+      <img ng-src="{{movie.movieImage}}" alt="" />
+    </div>
+    <div class="column" id="movieInfo">
+      <!-- Movie name -->
+      <h1>{{movie.movieName}}</h1>
+      <!-- Languages -->
+      <h2>English . Hindi . Tamil</h2>
+      <h2>Rating: {{movie.rating}} / 10</h2>
+      <!-- Button to book the movie -->
+      <button class="book-button" ng-click="locationChange2('#/theatreDecide')">
+        Book Now
+      </button>
+      <div class="movie-description">{{movie.description}}</div>
+    </div>
+  </div>
+</div>
+
+<!-- Movie description and cast section 
+<div style="margin: 0 5%">
+   Movie description 
+  <div class="movieDesc">
+    <h2 style="font-size: 2.3vw">Movie Description:</h2>
+    <br />
+     Display movie description 
+    <p style="font-size: 1.5vw">{{movie.description}}</p>
+  </div>
+  <hr style="opacity: 0.3" />
+  <br />
+  <br />
+   Cast information section 
+  <div class="cast">
+    <div class="row castInfo">
+       Loop through cast members 
+      <div ng-repeat="cast in castMemberList" class="column">
+         Display cast member image 
+        <img ng-src="{{cast.castMemberImage}}" alt="" />
+         Display cast member name 
+        <h3>{{cast.castMember}}</h3>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<!-- Include footer -->
+<!-- <div ng-include="'../../common/views/footer.html'"></div> -->

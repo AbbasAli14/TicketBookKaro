@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url("../images/Fonts/GlacialIndifference-Regular.otf");
+}
+
+@font-face {
+  font-family: "Glacial Indifference-Bold";
+  src: url("../images/Fonts/GlacialIndifference-Bold.otf");
+}
+
+* {
+  font-family: "Glacial Indifference", sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #ff914d;
+  font-size: 45px;
+}
+
+.ticketDetails {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+.ticketDetails table {
+  margin: auto;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 20px;
+  border-style: hidden;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ticketDetails td,
+th {
+  font-size: 23px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  border-radius: 20px;
+}
+
+.product {
+  width: 60%;
+}
+.book-button {
+  height: 8vh;
+  width: 10vw;
+  border-radius: 12vh;
+  color: #ff914d;
+  font-size: 100%;
+  background-color: black;
+  border: 0.1vh solid black;
+  transition: 300ms;
+}
+.book-button:hover {
+  background-color: #ff914d;
+  color: white;
+  border: none;
+}

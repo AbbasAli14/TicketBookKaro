@@ -1,0 +1,32 @@
+<div class="theatre-container">
+  <div class="go-back-container"><button class="go-back">X</button></div>
+  <div class="date-dropdown">
+    <label for="date">Select Date:</label>
+    <input class="date-dropdown" type="date" ng-model="selectedDate" />
+  </div>
+
+  <div class="theatre-card" ng-repeat="theatre in theatres">
+    <img ng-src="{{theatre.image}}" alt="{{theatre.name}}" />
+    <h3>{{theatre.name}}</h3>
+    <label for="time">Select Time:</label>
+    <div class="time-buttons">
+      <button
+        ng-repeat="time in theatre.times"
+        class="time-button"
+        ng-class="{'selected': selectedTime === time}"
+        ng-click="selectTime(time)"
+      >
+        {{time}}
+      </button>
+    </div>
+    <div class="errormsg" style="color: red; font-size: 70%">
+      {{errTheatre}}
+    </div>
+    <button
+      class="book-button"
+      ng-click="bookTicket(theatre.name, selectedDate, selectedTime)"
+    >
+      Book Now
+    </button>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="container-of-seatSel">
+  <div class="seats" ng-repeat="seatsPerRow in seatRows">
+    <div class="column" ng-repeat="seat in seatsPerRow">
+      <button ng-click="selectSeat(seat)" class="seat">
+        <span class="{{seat.class}}"> chair </span>
+      </button>
+    </div>
+  </div>
+  <div class="screen-top"></div>
+  <div class="Screen"></div>
+  <h2 style="text-align: center">Everybody Look Here!</h2>
+  <div ng-show="selectedSeats.length > 0">
+    <div class="seatSelected">
+      <h1 class="column-seatSelected">Seats Selected:</h1>
+      <h1
+        class="column-seatSelected"
+        ng-repeat="seat in selectedSeats | orderBy"
+      >
+        {{seat}}
+      </h1>
+    </div>
+  </div>
+</div>
+<button class="book-button" ng-click="bookNow('payment', ticketDetails)">
+  Book Now
+</button>

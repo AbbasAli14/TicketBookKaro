@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url("../images/Fonts/GlacialIndifference-Regular.otf");
+}
+
+@font-face {
+  font-family: "Glacial Indifference-Bold";
+  src: url("../images/Fonts/GlacialIndifference-Bold.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: "Glacial Indifference", sans-serif;
+}
+
+body {
+  height: 100%;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5998599268809086) 0%,
+      rgba(0, 0, 0, 0.5998599268809086) 35%
+    ),
+    url("../images/Misc/background.jpg");
+}
+
+body h1 a {
+  display: block;
+  font-size: 9vh;
+  font-weight: bolder;
+  width: 40vw;
+  text-decoration: none;
+  color: #ff914d;
+}
+
+.signup-signin-logo {
+  margin: 4vh;
+  height: 22vh;
+  width: 17vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images/Logos/logopng.png");
+}
+
+.login-signup {
+  height: 80vh;
+  width: 30vw;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.8351540445279675) 0%,
+    rgba(0, 0, 0, 0.809943960494354) 35%
+  );
+  border-radius: 4%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  /* display: flex;
+  align-items: center; */
+}
+
+.login-signup h1 {
+  display: absolute;
+  display: block;
+  color: #ff914d;
+  margin-top: 12vh;
+  margin-left: 5vw;
+}
+
+.form {
+  position: absolute;
+  height: 90%;
+  width: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form input {
+  display: block;
+  height: 6vh;
+  width: 20vw;
+  /* margin-bottom: 5vh; */
+  border: 5px solid white;
+  outline: none;
+  font-size: 110%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#username {
+  top: 30%;
+}
+
+#password {
+  top: 50%;
+}
+
+.form button {
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 6vh;
+  width: 20vw;
+  background-color: #ff914d;
+  border: none;
+  cursor: pointer;
+}
+
+.form p {
+  position: absolute;
+  left: 8%;
+  top: 43%;
+  color: red;
+  font-size: small;
+}
+
+#passwordError {
+  top: 62%;
+}
+
+.loginSignupDecider {
+  color: white;
+  display: inline;
+}
+
+.loginSignupDeciderContainer {
+  position: absolute;
+  width: 60%;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.loginSignupDeciderContainer a {
+  text-decoration: none;
+  color: #ff914d;
+}
+
+.invalid-username-pass {
+  color: red;
+  position: absolute;
+  top: 78.5%;
+  left: 15%;
+}
+.signUpForm {
+  position: absolute;
+  left: 46.5%;
+  top: 25%;
+  transform: translateX(-50%);
+  height: 60%;
+  width: 90%;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.signUpForm input {
+  height: 100%;
+  width: 22vw;
+  position: relative;
+  left: 12%;
+  font-size: large;
+}
+.signUpForm .birthday {
+  /* background-color: white; */
+  color: white;
+  font-size: 90%;
+  height: 100%;
+  width: 22vw;
+  position: relative;
+  left: 12%;
+  display: flex;
+  align-items: center;
+}
+.birthday input {
+  height: 90%;
+  width: 47%;
+  position: absolute;
+  left: 50%;
+}
+.signUpForm button {
+  height: 100%;
+  position: relative;
+  left: 14%;
+  width: 21vw;
+  background-color: #ff914d;
+  border: none;
+  cursor: pointer;
+}
+.signUpForm p {
+  height: 40%;
+  color: red;
+  text-align: center;
+}
+.signUpForm p span {
+  color: red;
+  text-align: center;
+}
+.showError2 {
+  position: absolute;
+  color: red;
+  top: 86%;
+  left: 21%;
+}

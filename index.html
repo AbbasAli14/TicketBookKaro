@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="myCtrl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicketBookKaro.Com</title>
+    <script src="/lib/angular.js"></script>
+    <script src="/lib/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="/common/controller/header.js"></script>
+    <script src="/Ticket Booking/filter/amountFilter.js"></script>
+    <script src="/common/controller/loader.js"></script>
+    <script src="/common/services/CSSLoaderService.js"></script>
+    <script src="/common/services/DataTransferService.js"></script>
+    <script src="/common/controller/myCtrl.js"></script>
+    <script src="/Homepage/controller/homepageAng.js"></script>
+    <script src="/Login And Sign Up/controller/loginAndSignUp.js"></script>
+    <script src="/myAccount/controller/myAccount.js"></script>
+    <script src="/Movies Tab/controller/moviesTab.js"></script>
+    <script src="/Movies Tab/controller/movieDesc.js"></script>
+    <script src="/Ticket Booking/controller/theatreDecide.js"></script>
+    <script src="/Ticket Booking/controller/payment.js"></script>
+    <script src="/Ticket Booking/controller/SeatSelection.js"></script>
+    <script src="/Ticket Booking/controller/ticketDetails.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/Logos/footerlogo.png" />
+
+    <style>
+      @keyframes loading {
+        from {
+          transform: rotate(0turn);
+        }
+        to {
+          transform: rotate(1turn);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div ng-controller="LoadingController">
+      <div ng-show="!loading">
+        <div
+          style="
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            transition: opacity 0.75s, visibility 0.75s;
+          "
+        >
+          <div
+            style="
+              content: '';
+              width: 75px;
+              height: 75px;
+              border: 15px solid #dddddd;
+              border-top-color: #ff914d;
+              border-radius: 50%;
+              animation: loading 0.75s ease infinite;
+            "
+          ></div>
+        </div>
+      </div>
+      <div ng-show="loading">
+        <div ng-view></div>
+      </div>
+    </div>
+  </body>
+</html>

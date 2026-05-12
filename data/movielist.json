@@ -1,0 +1,485 @@
+[
+  {
+    "movieName": "Indiana Jones 5",
+    "movieImage": "/images/Posters/Indiana Jones/movie1.jpg",
+    "rating": 6.7,
+    "description": "Set in 1969, the film follows Indy and his estranged goddaughter, Helena, who are trying to locate a powerful artifact before Jürgen Voller, a Nazi-turned-NASA scientist who plans to use it to alter the outcome of World War II.",
+    "genre": "Adventure",
+    "castMembers": ["Harrison Ford", "Phoebe Waller-Bridge"],
+    "castMembersImages": [
+      "/images/Posters/Indiana Jones/cast1.jpeg",
+      "/images/Posters/Indiana Jones/cast2.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/Indiana Jones/Indiana Jones 5.jpg"
+  },
+  {
+    "movieName": "Avatar 2",
+    "movieImage": "/images/Posters/Avatar 2/movie2.jpg",
+    "rating": 7.6,
+    "description": "It follows a blue-skinned humanoid Na'vi named Jake Sully (Worthington) as he and his family, under renewed human threat, seek refuge with the aquatic Metkayina clan of Pandora, a habitable exomoon on which they live.",
+    "genre": "Adventure",
+    "castMembers": ["Sam Worthington", "Zoe Saldaña", "Kate Winslet"],
+    "castMembersImages": [
+      "/images/Posters/Avatar 2/cast1.jpeg",
+      "/images/Posters/Avatar 2/cast2.jpeg",
+      "/images/Posters/Avatar 2/cast3.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/Avatar 2/Avatar 2.jpeg"
+  },
+  {
+    "movieName": "Jurassic World: Dominion",
+    "movieImage": "/images/Posters/Jurassic World Domination/movie3.jpg",
+    "rating": 5.6,
+    "description": "Four years after the destruction of Isla Nublar, Biosyn operatives attempt to track down Maisie Lockwood, while Dr Ellie Sattler investigates a genetically engineered swarm of giant insects.",
+    "genre": "Adventure",
+    "castMembers": ["Chris Pratt", "Bryce Dallas Howard"],
+    "castMembersImages": [
+      "/images/Posters/Jurassic World Domination/cast1.jpeg",
+      "/images/Posters/Jurassic World Domination/cast2.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/Jurassic World Domination/JurassicWorld.jpeg"
+  },
+  {
+    "movieName": "Uncharted",
+    "movieImage": "/images/Posters/Unchartered/movie4.jpg",
+    "rating": 6.8,
+    "description": "Street-smart Nathan Drake (Tom Holland) is recruited by seasoned treasure hunter Victor Sully Sullivan (Mark Wahlberg) to recover a fortune amassed by Ferdinand Magellan and lost 500 years ago by the House of Moncada.",
+    "genre": "Adventure",
+    "castMembers": ["Tom Holland", "Sophia Ali", "Mark Wahlberg"],
+    "castMembersImages": [
+      "/images/Posters/Unchartered/cast1.jpeg",
+      "/images/Posters/Unchartered/cast2.jpeg",
+      "/images/Posters/Unchartered/cast3.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/Unchartered/Uncharted.jpg"
+  },
+  {
+    "movieName": "The Lost City",
+    "movieImage": "/images/Posters/The Lost City/movie5.jpg",
+    "rating": 7.1,
+    "description": "A reclusive romance novelist on a book tour with her cover model gets swept up in a kidnapping attempt that lands them both in a cutthroat jungle adventure.",
+    "genre": "Adventure",
+    "castMembers": ["Sandra Bullock", "Daniel Radcliffe", "Brad Pitt"],
+    "castMembersImages": [
+      "/images/Posters/The Lost City/cast1.jpeg",
+      "/images/Posters/The Lost City/cast2.jpeg",
+      "/images/Posters/The Lost City/cast3.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/The Lost City/thelostcity.png"
+  },
+  {
+    "movieName": "Tomb Raider 2",
+    "movieImage": "/images/Posters/Tomb Raider/movie6.jpg",
+    "rating": 7.4,
+    "description": "The film stars Alicia Vikander as Lara Croft, who embarks on a perilous journey to her father's last-known destination, hoping to solve the mystery of his disappearance.",
+    "genre": "Adventure",
+    "castMembers": ["Alicia Vikander", "Daniel Wu"],
+    "castMembersImages": [
+      "/images/Posters/Tomb Raider/cast1.jpeg",
+      "/images/Posters/Tomb Raider/cast2.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/Tomb Raider/tombraider.jpg"
+  },
+  {
+    "movieName": "The Batman",
+    "movieImage": "/images/Posters/The Batman/movie7.jpg",
+    "rating": 7.8,
+    "description": "The film sees Batman, who has been fighting crime in Gotham City for two years, uncover corruption while pursuing the Riddler (Dano), a serial killer who targets Gotham's corrupt elite.",
+    "genre": "Action",
+    "castMembers": ["Robert Pattinson", "Zoe Kravitz"],
+    "castMembersImages": [
+      "/images/Posters/The Batman/cast1.jpeg",
+      "/images/Posters/The Batman/cast2.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/The Batman/Batman.jpg"
+  },
+  {
+    "movieName": "No Time to Die",
+    "movieImage": "/images/Posters/No Time to Die/movie8.jpg",
+    "rating": 8.2,
+    "description": "In No Time to Die, Bond has left active service with MI6 and is recruited by the CIA to find a kidnapped scientist, which leads to a showdown with a powerful and vengeful adversary armed with a technology capable of killing millions.",
+    "genre": "Action",
+    "castMembers": ["Daniel Craig", "Lea Seydoux", "Rami Malek"],
+    "castMembersImages": [
+      "/images/Posters/No Time to Die/cast1.jpeg",
+      "/images/Posters/No Time to Die/cast2.jpeg",
+      "/images/Posters/No Time to Die/cast3.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/No Time to Die/NoTimeToDie.jpg"
+  },
+  {
+    "movieName": "Mission: Impossible 7",
+    "movieImage": "/images/Posters/Mission Impossible 7/movie9.jpg",
+    "rating": 6.9,
+    "description": "An American agent, under false suspicion of disloyalty, must discover and expose the real spy without the help of his organization. Ethan Hunt (Tom Cruise) and his I.M.F. team go undercover to bring down the N.O.C. list, a list of every Agent and spy in the I.M.F.",
+    "genre": "Action",
+    "castMembers": ["Tom Cruise", "Hayley Atwell"],
+    "castMembersImages": [
+      "/images/Posters/Mission Impossible 7/cast1.jpeg",
+      "/images/Posters/Mission Impossible 7/cast2.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/Mission Impossible 7/MissionImpossible&.jpg"
+  },
+  {
+    "movieName": "Dune",
+    "movieImage": "/images/Posters/Dune/movie10.jpg",
+    "rating": 8.1,
+    "description": "A mythic and emotionally charged hero's journey, it tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people.",
+    "genre": "Action",
+    "castMembers": ["Timothee Chalamet", "Zendaya"],
+    "castMembersImages": [
+      "/images/Posters/Dune/cast1.jpeg",
+      "/images/Posters/Dune/cast2.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/Dune/movie10.jpg"
+  },
+  {
+    "movieName": "The Suicide Squad",
+    "movieImage": "/images/Posters/The Suicide Squad/movie11.jpg",
+    "rating": 7.3,
+    "description": "In the film, a secret government agency led by Amanda Waller recruits imprisoned supervillains to execute dangerous black ops missions and save the world from a powerful threat in exchange for reduced sentences.",
+    "genre": "Action",
+    "castMembers": ["Margot Robbie", "John Cena", "Idris Elba"],
+    "castMembersImages": [
+      "/images/Posters/The Suicide Squad/cast1.jpeg",
+      "/images/Posters/The Suicide Squad/cast2.jpeg",
+      "/images/Posters/The Suicide Squad/cast3.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/The Suicide Squad/SuicideSquad.jpg"
+  },
+  {
+    "movieName": "The Matrix 4",
+    "movieImage": "/images/Posters/The Matrix 4/movie12.jpg",
+    "rating": 7.7,
+    "description": "The film is set sixty years after Revolutions and follows Neo, who lives a seemingly ordinary life as a video game developer having trouble with distinguishing fantasy from reality.",
+    "genre": "Action",
+    "castMembers": ["Keanu Reeves", "Priyanka Chopra"],
+    "castMembersImages": [
+      "/images/Posters/The Matrix 4/cast1.jpeg",
+      "/images/Posters/The Matrix 4/cast2.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/The Matrix 4/matrix4.jpg"
+  },
+  {
+    "movieName": "The Outlaws",
+    "movieImage": "/images/Posters/The Outlaws/movie18.jpeg",
+    "rating": 8.2,
+    "description": "Based on real events, this crime action film depicts a Seoul detective's attempts to keep peace while two Chinese-Korean gangs battle over turf in the neighborhood.",
+    "genre": "Action",
+    "castMembers": ["Ma Dong-seok", "Yoon Kye-sang"],
+    "castMembersImages": [
+      "/images/Posters/The Outlaws/cast1.jpeg",
+      "/images/Posters/The Outlaws/cast2.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/The Outlaws/theOutlaws.jpg"
+  },
+  {
+    "movieName": "Barbie",
+    "movieImage": "/images/Posters/Barbie/movie13.jpg",
+    "rating": 7.2,
+    "description": "Based on the eponymous fashion dolls by Mattel, it is the first live-action Barbie film after numerous computer-animated films and specials. The film stars Margot Robbie as the titular character and Ryan Gosling as Ken, and follows the pair on a journey of self-discovery following an existential crisis.",
+    "genre": "Comedy",
+    "castMembers": ["Margot Robbie", "Ryan Gosling"],
+    "castMembersImages": [
+      "/images/Posters/Barbie/cast1.jpeg",
+      "/images/Posters/Barbie/cast2.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/Barbie/barbie.jpg"
+  },
+  {
+    "movieName": "Ghosted",
+    "movieImage": "/images/Posters/Ghosted/movie14.jpg",
+    "rating": 5.8,
+    "description": "In London, Cole is abducted to Pakistan by arms dealers who believe him to be legendary CIA operative the Taxman. Before he can be tortured with insects to extract a passcode, he is rescued by Sadie, who reveals herself to be the Taxman.",
+    "genre": "Comedy",
+    "castMembers": ["Chris Evans", "Ana de Armas"],
+    "castMembersImages": [
+      "/images/Posters/Ghosted/cast1.jpeg",
+      "/images/Posters/Ghosted/cast2.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/Ghosted/ghosted.jpg"
+  },
+  {
+    "movieName": "The French Dispatch",
+    "movieImage": "/images/Posters/The French Dispatch/movie15.jpg",
+    "rating": 7.1,
+    "description": "The film has been described as a love letter to journalists set at an outpost of an American newspaper in a fictional 20th-century French city, centering on four stories. It brings to life a collection of tales published in the eponymous The French Dispatch, based in the fictional French city of Ennui-sur-Blase.",
+    "genre": "Comedy",
+    "castMembers": ["Bill Murray", "Tilda Swinton"],
+    "castMembersImages": [
+      "/images/Posters/The French Dispatch/cast1.jpeg",
+      "/images/Posters/The French Dispatch/cast2.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/The French Dispatch/theFrenchDispatch.jpg"
+  },
+  {
+    "movieName": "The Harder They Fall",
+    "movieImage": "/images/Posters/The Harder They Fall/movie16.jpg",
+    "rating": 6.5,
+    "description": "When an outlaw discovers his enemy is being released from prison, he reunites his gang to seek revenge.",
+    "genre": "Comedy",
+    "castMembers": ["Jonathan Majors", "LaKeith Stanfield", "Zazie Beetz"],
+    "castMembersImages": [
+      "/images/Posters/The Harder They Fall/cast1.jpeg",
+      "/images/Posters/The Harder They Fall/cast2.jpeg",
+      "/images/Posters/The Harder They Fall/cast3.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/The Harder They Fall/thehardertheyfall.jpeg"
+  },
+  {
+    "movieName": "Fatherhood",
+    "movieImage": "/images/Posters/Fatherhood/movie.jpg",
+    "rating": 7.0,
+    "description": "A father brings up his baby girl as a single dad after the unexpected death of his wife who died a day after their daughter's birth.",
+    "genre": "Comedy",
+    "castMembers": ["Kevin Hart", "Melody Hurd"],
+    "castMembersImages": [
+      "/images/Posters/Fatherhood/cast1.jpeg",
+      "/images/Posters/Fatherhood/cast2.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/Fatherhood/fatherhood.jpeg"
+  },
+  {
+    "movieName": "A Quiet Place Part II",
+    "movieImage": "/images/Posters/A Quiet Place Part II/movie.jpeg",
+    "rating": 7.2,
+    "description": "Following the deadly events at home, the Abbott family must now face the terrors of the outside world as they continue their fight for survival in silence. Forced to venture into the unknown, they quickly realize that the creatures that hunt by sound are not the only threats that lurk beyond the sand path.",
+    "genre": "Horror",
+    "castMembers": ["Cillian Murphy", "Emily Blunt", "John Krasinski"],
+    "castMembersImages": [
+      "/images/Posters/A Quiet Place Part II/cast1.jpeg",
+      "/images/Posters/A Quiet Place Part II/cast2.jpeg",
+      "/images/Posters/A Quiet Place Part II/cast3.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/A Quiet Place Part II/aquietplace.jpg"
+  },
+  {
+    "movieName": "Halloween Kills",
+    "movieImage": "/images/Posters/Halloween Kills/movie.jpeg",
+    "rating": 5.6,
+    "description": "Surviving victims of Michael Myers form a vigilante mob and vow to end his reign of terror.",
+    "genre": "Horror",
+    "castMembers": ["James Jude Courtney", "Jamie Lee Curtis"],
+    "castMembersImages": [
+      "/images/Posters/Halloween Kills/cast1.jpeg",
+      "/images/Posters/Halloween Kills/cast2.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/Halloween%20Kills/halloweenkills.jpg"
+  },
+  {
+    "movieName": "Scream",
+    "movieImage": "/images/Posters/Scream/movie.jpeg",
+    "rating": 6.5,
+    "description": "The plot takes place twenty-five years after the original Woodsboro murders from Scream (1996), when yet another Ghostface appears and begins targeting a group of teenagers who are each somehow linked to the original killings.",
+    "genre": "Horror",
+    "castMembers": ["Jenna Ortega", "Melissa Barrera"],
+    "castMembersImages": [
+      "/images/Posters/Scream/cast1.jpeg",
+      "/images/Posters/Scream/cast2.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/Scream/scream.jpg"
+  },
+  {
+    "movieName": "Candyman",
+    "movieImage": "/images/Posters/Candyman/movie.jpeg",
+    "rating": 8.2,
+    "description": "In 1977 at Chicago's Cabrini Green housing projects, a young boy witnesses the killing of Sherman Fields, a homeless African American man with a hook for a hand. Suspected of giving a white child a razor blade in a piece of candy, Sherman is beaten to death by police but later proven innocent.",
+    "genre": "Horror",
+    "castMembers": ["Jordan Peele", "Yahya Abdul-Mateen II", "Teyonah Parris"],
+    "castMembersImages": [
+      "/images/Posters/Candyman/cast1.jpeg",
+      "/images/Posters/Candyman/cast2.jpeg",
+      "/images/Posters/Candyman/cast3.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/Candyman/candyman.jpg"
+  },
+  {
+    "movieName": "Escape Room: Tournament of Champions",
+    "movieImage": "/images/Posters/Escape Room Tournament of Champions/movie.jpeg",
+    "rating": 7.7,
+    "description": "In this installment, six people unwittingly find themselves locked in another series of escape rooms, slowly uncovering what they have in common to survive... and discovering they've all played the game before.",
+    "genre": "Horror",
+    "castMembers": ["Taylor Russell", "Logan Miller", "Holland Roden"],
+    "castMembersImages": [
+      "/images/Posters/Escape Room Tournament of Champions/cast1.jpeg",
+      "/images/Posters/Escape Room Tournament of Champions/cast2.jpeg",
+      "/images/Posters/Escape Room Tournament of Champions/cast3.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/Escape Room Tournament of Champions/escaperoom.jpg"
+  },
+  {
+    "movieName": "The Conjuring: The Devil Made Me Do It",
+    "movieImage": "/images/Posters/The Conjuring The Devil Made Me Do It/movie.jpeg",
+    "rating": 7.3,
+    "description": "In 1981, demonologists Ed and Lorraine Warren document the exorcism of 8-year-old David Glatzel, attended by his family, his sister Debbie, her boyfriend Arne Johnson, and Father Gordon in Brookfield, Connecticut. During the exorcism, Arne invites the demon to enter his body instead of David's.",
+    "genre": "Horror",
+    "castMembers": ["Vera Farmiga", "Ed Warren"],
+    "castMembersImages": [
+      "/images/Posters/The Conjuring The Devil Made Me Do It/cast1.jpeg",
+      "/images/Posters/The Conjuring The Devil Made Me Do It/cast2.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/The Conjuring The Devil Made Me Do It/theconjuring.jpg"
+  },
+  {
+    "movieName": "Oppenheimer",
+    "movieImage": "/images/Posters/Oppenheimer/movie.jpeg",
+    "rating": 8.6,
+    "description": "The film is based on the 2005 biography American Prometheus by Kai Bird and Martin J. Sherwin, it chronicles the career of Oppenheimer; the story predominantly focuses on Oppenheimer's studies, his direction of the Manhattan Project during World War II, and his eventual fall from grace due to his 1954 security hearing.",
+    "genre": "Sci-Fi",
+    "castMembers": ["Cillian Murphy", "Robert Downey Jr.", "Emily Blunt"],
+    "castMembersImages": [
+      "/images/Posters/Oppenheimer/cast1.jpeg",
+      "/images/Posters/Oppenheimer/cast2.jpeg",
+      "/images/Posters/Oppenheimer/cast3.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/Oppenheimer/oppenheimer.jpeg"
+  },
+  {
+    "movieName": "The Tomorrow War",
+    "movieImage": "/images/Posters/The Tomorrow War/movie.jpeg",
+    "rating": 8.1,
+    "description": "A family man is drafted to fight in a future war where the fate of humanity relies on his ability to confront the past.",
+    "genre": "Sci-Fi",
+    "castMembers": ["Chris Pratt", "Yvonne Strahovski", "Betty Gilpin"],
+    "castMembersImages": [
+      "/images/Posters/The Tomorrow War/cast1.jpeg",
+      "/images/Posters/The Tomorrow War/cast2.jpeg",
+      "/images/Posters/The Tomorrow War/cast3.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/The Tomorrow War/tomorrowwar.jpg"
+  },
+  {
+    "movieName": "The Adam Project",
+    "movieImage": "/images/Posters/The Adam Project/movie.jpeg",
+    "rating": 6.7,
+    "description": "In a dystopian 2050, fighter pilot Adam Reed steals a time jet to escape to 2018 to save his wife, Laura. In the process, he gets injured and crash-lands in 2022. The story then shifts to 12-year-old Adam in 2022, whose father Louis died a year previously.",
+    "genre": "Sci-Fi",
+    "castMembers": ["Ryan Reynolds", "Walker Scobell"],
+    "castMembersImages": [
+      "/images/Posters/The Adam Project/cast1.jpeg",
+      "/images/Posters/The Adam Project/cast2.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/The Adam Project/theadamproject.jpg"
+  },
+  {
+    "movieName": "Cyrano",
+    "movieImage": "/images/Posters/Cyrano/movie.jpeg",
+    "rating": 7.4,
+    "description": "As the play begins, Roxanne's childhood friend, the dwarf Cyrano de Bergerac, objects to the lead actor and chases him off the stage with rhyming insults, then duels a man who mocks Cyrano's physical condition. Roxanne fails to realize that Cyrano is desperately in love with her.",
+    "genre": "Romance",
+    "castMembers": ["Peter Dinklage", "Haley Bennett", "Kelvin Harrison Jr."],
+    "castMembersImages": [
+      "/images/Posters/Cyrano/cast1.jpeg",
+      "/images/Posters/Cyrano/cast2.jpeg",
+      "/images/Posters/Cyrano/cast3.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/Cyrano/Cyrano.jpeg"
+  },
+  {
+    "movieName": "The Last Letter from Your Lover",
+    "movieImage": "/images/Posters/The Last Letter From Your Lover/movie.jpeg",
+    "rating": 6.7,
+    "description": "A pair of interwoven stories set in the present and past follows Ellie Haworth, an ambitious journalist who discovers a trove of secret love letters from 1965 and becomes determined to solve the mystery of the forbidden affair at their center.",
+    "genre": "Romance",
+    "castMembers": ["Callum Turner", "Shailene Woodley", "Nabhaan Rizwan"],
+    "castMembersImages": [
+      "/images/Posters/The Last Letter From Your Lover/cast1.jpeg",
+      "/images/Posters/The Last Letter From Your Lover/cast2.jpeg",
+      "/images/Posters/The Last Letter From Your Lover/cast3.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/The Last Letter From Your Lover/thelastletterfromyourlover.jpg"
+  },
+  {
+    "movieName": "After Yang",
+    "movieImage": "/images/Posters/After Yang/movie.jpeg",
+    "rating": 6.7,
+    "description": "When his young daughter's beloved companion, an android named Yang , malfunctions, Jake searches for a way to repair him. In the process, Jake discovers the life that has been passing in front of him, reconnecting with his wife (Jodie Turner-Smith) and daughter across a distance he didn't know was there.",
+    "genre": "Romance",
+    "castMembers": ["Colin Farrell", "Jodie Turner-Smith"],
+    "castMembersImages": [
+      "/images/Posters/After Yang/cast1.jpeg",
+      "/images/Posters/After Yang/cast2.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/After Yang/afteryang.jpg"
+  },
+  {
+    "movieName": "Let Them All Talk",
+    "movieImage": "/images/Posters/Let Them All Talk/movie.jpeg",
+    "rating": 6.1,
+    "description": "The story of a celebrated author who takes a journey with some old friends to have some fun and heal old wounds. Her nephew comes along to wrangle the ladies as well as her literary agent who is desperate to find out about her next book.",
+    "genre": "Romance",
+    "castMembers": ["Lucas Hedges", "Gemma Chan", "Dianne Wiest"],
+    "castMembersImages": [
+      "/images/Posters/Let Them All Talk/cast1.jpeg",
+      "/images/Posters/Let Them All Talk/cast2.jpeg",
+      "/images/Posters/Let Them All Talk/cast3.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/Let Them All Talk/Let them all talk.jpg"
+  },
+  {
+    "movieName": "The World to Come",
+    "movieImage": "/images/Posters/The World To Come/movie.jpeg",
+    "rating": 7.7,
+    "description": "Somewhere along the mid-19th century American East Coast frontier, two neighboring couples battle hardship and isolation, witnessed by a splendid yet testing landscape, challenging them both physically and psychologically.",
+    "genre": "Romance",
+    "castMembers": [
+      "Katherine Waterston",
+      "Vanessa Kirby",
+      "Christopher Abbott"
+    ],
+    "castMembersImages": [
+      "/images/Posters/The World To Come/cast1.jpeg",
+      "/images/Posters/The World To Come/cast2.jpeg",
+      "/images/Posters/The World To Come/cast3.jpeg"
+    ],
+    "price": 190,
+    "bgImage": "/images/Posters/The World To Come/the world to come.jpg"
+  },
+  {
+    "movieName": "Midsommar",
+    "movieImage": "/images/Posters/Midsommar/movie.jpg",
+    "rating": 7.1,
+    "description": "A couple travels to Northern Europe to visit a rural hometown's fabled Swedish mid-summer festival. What begins as an idyllic retreat quickly devolves into an increasingly violent and bizarre competition at the hands of a pagan cult.",
+    "genre": "Horror",
+    "castMembers": ["Florence Pugh", "Jack Reynor", "Vilhelm Blomgren"],
+    "castMembersImages": [
+      "/images/Posters/Midsommar/cast1.jpeg",
+      "/images/Posters/Midsommar/cast2.jpeg",
+      "/images/Posters/Midsommar/cast3.jpeg"
+    ],
+    "price": 200,
+    "bgImage": "/images/Posters/Midsommar/midsommar.jpg",
+    "theatres": "-"
+  }
+]

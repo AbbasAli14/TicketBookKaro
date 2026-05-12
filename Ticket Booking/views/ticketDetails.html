@@ -1,0 +1,40 @@
+<!-- <div id="ticket-details-container">
+  <div id="blackBorder">
+    <div class="row heading"><h1>Tickets Booked!</h1></div>
+    <div class="row heading">
+      <h2>Thank you! Your tickets have been booked.</h2>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img ng-src="{{ticketDetails.movieImage}}" alt="" />
+      </div>
+      <div class="column" id="movieInfo">
+        <h1>{{ticketDetails.movieName}}</h1>
+        <h2>Date: {{ticketDetails.date}}</h2>
+        <h2>Time: {{ticketDetails.time}}</h2>
+        <h2>Seats: {{seats}}</h2>
+        <h2>Net Total: {{ticketDetails.netTotal | amountFilter}}</h2>
+        <button class="goHome" ng-click="goHome()">Go Home</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="ticketDetailsContainer">
+  <div class="blackBox"></div>
+  <img ng-src="{{ticketDetails.movieImage}}" alt="" class="movieClass" />
+  <div class="details">
+    <h1>{{ticketDetails.movieName}}</h1>
+    <ul class="detailsOfTicket">
+      <li>Theatre: Cinepolis</li>
+      <li>Time: {{ticketDetails.time}}</li>
+      <li>Date: {{ticketDetails.date}}</li>
+      <li>Seat: {{seats}}</li>
+      <li>Net Total: {{ticketDetails.netTotal | amountFilter}}</li>
+    </ul>
+  </div>
+  <button class="goHome" ng-click="goHome()">Go Home</button>
+  <div class="barcodeContainer">
+    <img src="../../images/Icons/barcode.png" alt="" class="barcode" />
+    <button>Print Reciept</button>
+  </div>
+</div>

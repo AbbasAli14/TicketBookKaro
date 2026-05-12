@@ -1,0 +1,42 @@
+[
+  {
+    "username": "yusufhafiz",
+    "email": "test@test.com",
+    "name": "Yusuf Hafiz",
+    "password": "test1234",
+    "dob": "27/12/03",
+    "contact_no": "0123456789"
+  },
+  {
+    "username": "abhiramakundi",
+    "email": "test1@test.com",
+    "name": "Abhiram Akundi",
+    "password": "test1234",
+    "dob": "27/12/03",
+    "contact_no": "0123456789"
+  },
+  {
+    "username": "haider",
+    "email": "aaa@aaa.com",
+    "name": "Haider Dawasaz",
+    "password": "test1234",
+    "dob": "27/12/03",
+    "contact_no": "0123456789"
+  },
+  {
+    "username": "abbas",
+    "email": "a@a.com",
+    "name": "Abbas Tati",
+    "password": "test1234",
+    "dob": "27/12/03",
+    "contact_no": "0123456789"
+  },
+  {
+    "username": "tanaya",
+    "email": "test9999@test.com",
+    "name": "Tanaya Gunjal",
+    "password": "test1234",
+    "dob": "27/12/03",
+    "contact_no": "0123456789"
+  }
+]

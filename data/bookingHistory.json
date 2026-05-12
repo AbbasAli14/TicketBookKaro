@@ -1,0 +1,38 @@
+[
+  {
+    "username": "haider",
+    "movieName": "The Adam Project",
+    "dateTime": "2023-07-28 20:00",
+    "theatre": "XYZ Theater",
+    "price": 150,
+    "noOfTickets": 3,
+    "movieImage": "/images/Posters/The Adam Project/movie.jpeg"
+  },
+  {
+    "username": "yusufhafiz",
+    "movieName": "Jurassic Park",
+    "dateTime": "2023-07-15 17:45",
+    "theatre": "Cinema Deluxe",
+    "price": 190,
+    "noOfTickets": 4,
+    "movieImage": "/images/Posters/Jurassic World Domination/movie3.jpg"
+  },
+  {
+    "username": "abhiramakundi",
+    "movieName": "Jurassic Park",
+    "dateTime": "2023-07-15 17:45",
+    "theatre": "Cinema Deluxe",
+    "price": 190,
+    "noOfTickets": 4,
+    "movieImage": "/images/Posters/Jurassic World Domination/movie3.jpg"
+  },
+  {
+    "username": "tanaya",
+    "movieName": "Jurassic Park",
+    "dateTime": "2023-07-15 17:45",
+    "theatre": "Cinema Deluxe",
+    "price": 190,
+    "noOfTickets": 4,
+    "movieImage": "/images/Posters/Jurassic World Domination/movie3.jpg"
+  }
+]

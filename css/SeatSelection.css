@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url("../images/Fonts/GlacialIndifference-Regular.otf");
+}
+
+@font-face {
+  font-family: "Glacial Indifference-Bold";
+  src: url("../images/Fonts/GlacialIndifference-Bold.otf");
+}
+* {
+  font-family: "Glacial Indifference";
+}
+body {
+  margin: 20px 10%;
+}
+
+.Screen {
+  background-color: rgb(159, 159, 159);
+  padding: 40px 0px;
+  margin: 0px 50px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.screen-top {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  margin: 20px 50px -40px 50px;
+  padding: 30px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  z-index: 1;
+}
+
+.seats {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 50px;
+}
+
+.column {
+  margin: 0.01vw;
+}
+
+.material-symbols-outlined .custom {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.setStyle {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  color: rgb(0, 194, 0);
+}
+
+.seatSelected {
+  display: flex;
+  justify-content: center;
+  margin: 0px 5px;
+}
+
+.column-seatSelected {
+  margin: 0px 5px;
+}
+.book-button {
+  height: 8vh;
+  width: 10vw;
+  border-radius: 12vh;
+  color: #ff914d;
+  background-color: white;
+  border: 0.1vh solid black;
+  transition: 300ms;
+}
+.book-button:hover {
+  background-color: black;
+  color: #ff914d;
+}

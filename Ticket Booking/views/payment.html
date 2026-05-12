@@ -1,0 +1,45 @@
+<div class="ticketDetails">
+  <h1>Your Order:</h1>
+  <table>
+    <tr>
+      <th class="product">Product</th>
+      <th class="price">Subtotal</th>
+    </tr>
+    <tr>
+      <td class="product">
+        Movie Name: {{ticketDetails.movieName}}<br />
+        Seats: {{seats}}<br />
+        Theatre: {{ticketDetails.theatre}}<br />
+        Date: {{ticketDetails.date}}<br />
+        Time: {{ticketDetails.time}}<br />
+      </td>
+      <td class="price">
+        {{ticketDetails.price}} X {{ticketDetails.seats.length}}
+      </td>
+    </tr>
+    <tr>
+      <td class="product">Subtotal</td>
+      <td class="price">{{subTotal | amountFilter}}</td>
+    </tr>
+    <tr>
+      <td class="product">Convenience Fee</td>
+      <td class="price">{{convenienceFee | amountFilter}}</td>
+    </tr>
+    <tr>
+      <td class="product">GST</td>
+      <td class="price">{{gst | amountFilter}}</td>
+    </tr>
+    <tr>
+      <td class="product">Net Total</td>
+      <td class="price">{{netTotal | amountFilter}}</td>
+    </tr>
+  </table>
+  <center>
+    <button
+      class="book-button"
+      ng-click="bookNow('ticketDetails', ticketDetails)"
+    >
+      Book Ticket
+    </button>
+  </center>
+</div>

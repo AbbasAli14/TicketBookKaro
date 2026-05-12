@@ -1,0 +1,78 @@
+/* This is the external CSS file */
+@import url(/css/header.css);
+@import url(/css/footer.css);
+
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url("../images/Fonts/GlacialIndifference-Regular.otf");
+}
+
+@font-face {
+  font-family: "Glacial Indifference-Bold";
+  src: url("../images/Fonts/GlacialIndifference-Bold.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Glacial Indifference", sans-serif;
+}
+.container-contact-us {
+  width: 80%;
+  margin: 0 auto;
+}
+body {
+  height: 100%;
+  background-color: white;
+}
+h1 {
+  display: block;
+  font-size: 9vh;
+  font-weight: bolder;
+  width: 40vw;
+  text-decoration: none;
+  color: #ff914d;
+  margin-top: 15vh;
+  margin-left: 30vw;
+}
+
+.text{
+  font-size: medium;
+  color: #ff914d;
+  text-align: center;
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 0.1vh solid #ff914d;
+  outline: none;
+}
+
+.form-group button {
+  position: relative;
+  top: 117%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 6vh;
+  width: 20vw;
+  background-color: #ff914d;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}

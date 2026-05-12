@@ -1,0 +1,109 @@
+<div class="container">
+  <div class="welcome-back" ng-show="getPageName() === '' && counter === 1">
+    Welcome {{getUserName()}}!
+  </div>
+  <div ng-include="'../../common/views/header.html'"></div>
+  <div class="slider">
+    <div class="slides-container">
+      <div class="slide slider1">
+        <button class="book-now" ng-click="bookNow('theatreDecide','Oppenheimer')">
+          Book Now
+        </button>
+      </div>
+      <div class="slide slider2">
+        <button class="book-now" ng-click="bookNow('theatreDecide','Barbie')">
+          Book Now
+        </button>
+      </div>
+      <div class="slide slider3">
+        <button class="book-now" ng-click="bookNow('theatreDecide','Midsommar')">
+          Book Now
+        </button>
+      </div>
+      <div class="slide slider4">
+        <button class="book-now" ng-click="bookNow('theatreDecide','The Batman')">
+          Book Now
+        </button>
+      </div>
+      <div class="slide slider5">
+        <button class="book-now" ng-click="bookNow('theatreDecide','Avatar 2')">
+          Book Now
+        </button>
+      </div>
+    </div>
+    <button class="arrow arrow-left"><</button>
+    <button class="arrow arrow-right">></button>
+    <div class="dots-div">
+      <div class="dots dot1">
+        <div></div>
+      </div>
+      <div class="dots dot2">
+        <div></div>
+      </div>
+      <div class="dots dot3">
+        <div></div>
+      </div>
+      <div class="dots dot4">
+        <div></div>
+      </div>
+      <div class="dots dot5">
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <div class="now-playing">
+    <div class="black-background">
+      <div class="movies-playing-text">Movies Now Playing</div>
+    </div>
+    <div class="now-playing-movies-container">
+
+      <div ng-repeat="movie in newArr track by $index" ng-class="'now-playing-movies movie1'">
+        <img ng-src="{{movie.movieImage}}" alt="" ng-click="locationChange('#/movieDescription',movie)" />
+        <div style="text-align: center;">{{movie.movieName}}</div>
+        <button class="now-playing-booknow" ng-click="bookNow('theatreDecide', movie)">
+          Book Now
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="now-playing">
+  <div class="black-background">
+    <div class="movies-playing-text">Coming Soon</div>
+  </div>
+  <div class="now-playing-movies-container">
+    <div class="now-playing-movies movie1">
+      <img src="../../images/Posters/comingsoon1.jpeg" alt="" ng-click="" />
+      <div>The Marvels</div>
+      <button class="now-playing-booknow watch-trailer">Watch Trailer</button>
+    </div>
+    <div class="now-playing-movies movie2">
+      <img src="../../images/Posters/comingsoon2.jpg" alt="" ng-click="" />
+      <div>Joker: Folie à Deux</div>
+      <button class="now-playing-booknow watch-trailer">Watch Trailer</button>
+    </div>
+    <div class="now-playing-movies movie3">
+      <img src="../../images/Posters/comingsoon3.jpg" alt="" ng-click="" />
+      <div>The Hunger Games</div>
+      <button class="now-playing-booknow watch-trailer">Watch Trailer</button>
+    </div>
+    <div class="now-playing-movies movie4">
+      <img src="../../images/Posters/comingsoon4.jpg" alt="" ng-click="" />
+      <div>Mission Impossible</div>
+      <button class="now-playing-booknow watch-trailer">Watch Trailer</button>
+    </div>
+    <div class="now-playing-movies movie5">
+      <img src="../../images/Posters/comingsoon5.jpg" alt="" ng-click="" />
+      <div>Challengers</div>
+      <button class="now-playing-booknow watch-trailer">Watch Trailer</button>
+    </div>
+    <div class="overlay hidden">
+      <div class="video">
+        <button class="close-video">X</button>
+        <video src="../../images/Misc/generictrailer.mp4" class="video-content" controls></video>
+      </div>
+    </div>
+  </div>
+</div>
+<div ng-include="'../../common/views/footer.html'"></div>
+</div>

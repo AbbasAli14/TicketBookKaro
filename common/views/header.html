@@ -1,0 +1,25 @@
+<header class="header" ng-controller="header">
+  <script src="/common/controller/header.js"></script>
+  <a href="" class="logo"
+    ><img
+      src="../../images/Logos/homepagelogo2.png"
+      alt="TicketBookKaro-Logo"
+      class="header-logo"
+    />
+  </a>
+  <ul class="navigation">
+    <li><a href="#/" ng-click="changePage('home')">Home</a></li>
+    <li><a href="#/movies" ng-click="changePage('movies')">Movies</a></li>
+    <li><a href="#/contactUs">Contact</a></li>
+    <li>
+      <a href="" id="my-account" ng-click="locationChange2('#/myAccount')"
+        >{{getMyAccountName()}}</a
+      >
+    </li>
+  </ul>
+  <div class="search">
+    <button><img src="../../images/Icons/searchIcon.png" alt="" /></button
+    ><input type="text" ng-model="$root.searchText" class="" />
+  </div>
+  
+</header>

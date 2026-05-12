@@ -1,0 +1,155 @@
+<div>
+  <div class="signup-signin-logo"></div>
+  <div class="login-signup">
+    <h1>{{login_signup}}</h1>
+    <div class="form" ng-show="login_signup === 'Login'">
+      <form
+        action=""
+        name="loginSignupForm"
+        onsubmit="return false; "
+        class="loginSignupForm"
+      >
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter username"
+          id="username"
+          ng-model="username"
+          required
+        />
+        <p
+          id="usernameError"
+          ng-show="loginSignupForm.username.$touched && loginSignupForm.username.$invalid"
+        >
+          *Username is a mandatory field*
+        </p>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter password"
+          ng-model="password"
+          required
+        />
+        <p
+          id="passwordError"
+          ng-show="loginSignupForm.password.$touched && loginSignupForm.password.$invalid"
+        >
+          *Password is a mandatory field*
+        </p>
+        <button
+          type="submit"
+          ng-disabled="loginSignupForm.password.$invalid || loginSignupForm.username.$invalid"
+          ng-click="getUser()"
+        >
+          {{login_signup}}
+        </button>
+        <!-- <div class="invalid-username-pass">{{errorMsg}}</div> -->
+        <show-error-message class="invalid-username-pass" ng-if="showError"
+          >{{errorMsg}}</show-error-message
+        >
+      </form>
+    </div>
+    <div ng-show="login_signup === 'Signup'" class="signup-container">
+      <form
+        action=""
+        name="signUpForm"
+        onsubmit="return false; "
+        class="signUpForm"
+      >
+        <!-- <div class="signup-container" ng-show="login_signup === 'Signup'"> -->
+        <input
+          type="text"
+          placeholder="Enter Name"
+          ng-model="name"
+          name="NewName"
+          required
+        />
+        <p>
+          <span
+            ng-show="signUpForm.NewName.$touched && signUpForm.NewName.$invalid"
+            >*Name is a mandatory field*</span
+          >
+        </p>
+        <input
+          type="text"
+          placeholder="Enter Username"
+          ng-model="NewUsername"
+          name="NewUsername"
+          required
+        />
+
+        <p>
+          <span
+            ng-show="signUpForm.NewUsername.$touched && signUpForm.NewUsername.$invalid"
+            >*Username is a mandatory field*</span
+          >
+        </p>
+        <input
+          type="email"
+          placeholder="Enter Email"
+          ng-model="email"
+          name="NewEmail"
+          required
+        />
+        <p>
+          <span
+            ng-show="signUpForm.NewEmail.$touched && signUpForm.NewEmail.$invalid"
+            >*Email is a mandatory field*</span
+          >
+        </p>
+        <div class="birthday">
+          <label for="birthday">Date Of Birth:</label>
+          <input
+            type="date"
+            id="birthday"
+            name="birthday"
+            ng-model="birthday"
+            required
+            check-dob
+          />
+        </div>
+        <p>
+          <span
+            ng-show="(signUpForm.birthday.$touched && signUpForm.birthday.$invalid)"
+            >*Date of Birth is a mandatory field*</span
+          >
+
+          <span ng-show="signUpForm.birthday.$error.checkDob "
+            >*You need to be 18 years or over to SignUp!*</span
+          >
+        </p>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          ng-model="NewPassword"
+          name="NewPassword"
+          required
+        />
+        <p>
+          <span
+            ng-show="signUpForm.NewPassword.$touched && signUpForm.NewPassword.$invalid"
+            >*Password is a mandatory field*</span
+          >
+        </p>
+        <button
+          ng-disabled="signUpForm.NewPassword.$invalid || signUpForm.NewUsername.$invalid || signUpForm.NewName.$invalid || signUpForm.NewEmail.$invalid || signUpForm.birthday.$invalid ||signUpForm.birthday.$error.checkDOB ||signUpForm.birthday.$error.checkDob"
+          ng-click="getUser()"
+        >
+          Signup
+        </button>
+        <!-- </div> -->
+      </form>
+      <span ng-show="showError2" class="showError2">{{errorMsg2}}</span>
+    </div>
+    <div class="loginSignupDeciderContainer">
+      <p class="loginSignupDecider">
+        {{login_signup==='Login'?"New to TicketBookKaro?":"Already have an
+        account?"}}
+      </p>
+      <a href="" ng-click="toggleLoginSignup()"
+        >--{{login_signup === 'Login'?'Signup':'Login'}} here</a
+      >
+    </div>
+  </div>
+</div>
